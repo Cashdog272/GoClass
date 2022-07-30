@@ -17,7 +17,7 @@ func main() {
 
 		os.Exit(1)
 	}
-	
+
 	if money > 1400000 {
 		fmt.Println("Sorry, you have too much money to be insured")
 
@@ -37,5 +37,5 @@ func main() {
 	years--
 	money /= rate
 
-	fmt.Printf("Years insured = %v\n Maximum money insured = %.1f", years, money)
+	fmt.Printf("Years insured = %v\n Maximum money insured = %.1f\n", years, money)
 }
