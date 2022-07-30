@@ -12,13 +12,13 @@ func main() {
 	fmt.Print("Your investment in roubles: ")
 	fmt.Fscan(os.Stdin, &money)
 
-	if money < 0 {
-		fmt.Println("Please, enter positive sum")
+	if money < 1 {
+		fmt.Println("Please, enter another sum")
 
 		os.Exit(1)
 	}
 
-	if money > 1400000 {
+	if money > 1399999 {
 		fmt.Println("Sorry, you have too much money to be insured")
 
 		os.Exit(2)
@@ -37,5 +37,5 @@ func main() {
 	years--
 	money /= rate
 
-	fmt.Printf("Years insured = %v\n Maximum money insured = %.1f\n", years, money)
+	fmt.Printf("Years insured = %v Maximum money insured = %.1f\n", years, money)
 }
